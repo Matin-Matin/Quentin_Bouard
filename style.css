@@ -1,0 +1,73 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* La colonne de dates est masquée par défaut */
+.date-column {
+    display: none;
+    position: relative;
+    top: 100%; /* Positionner en dessous de "Travaux" */
+    left: 0;
+    padding: 10px;
+
+}
+
+.date-column p {
+    margin: 5px 0;
+}
+
+.date-column a {
+    text-decoration: none;
+    color: black;
+}
+
+.date-column a:hover {
+    text-decoration: underline;
+}
+
+/* Affiche la colonne lorsque l'on passe la souris sur "Travaux" */
+.container:hover .date-column {
+    display: block;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+/* Galerie d'images */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne suivante si l'espace est insuffisant */
+    justify-content: center; /* Centre les images */
+}
+
+.image-group {
+    position: relative; /* Permet de positionner des éléments enfants de manière relative */
+    margin: 15px; /* Espacement autour de chaque groupe d'images */
+    text-align: center; /* Centre le texte sous les images */
+}
+
+.image-group img {
+    width: 600px; /* Largeur des images */
+    height: auto; /* Hauteur automatique pour maintenir le ratio */
+}
+
+h3 {
+    margin-top: 8px; /* Espacement au-dessus du titre */
+}
+
+  }
